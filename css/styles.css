@@ -222,3 +222,42 @@ body {
     max-width: 500px;
     position: relative;
 }
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+@media (min-width: 768px) {
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-view {
+        padding: 20px;
+    }
+}
