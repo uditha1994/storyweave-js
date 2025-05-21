@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (story.coverImage) {
             storyImageContainer.innerHTML = `
-                <img class="${story.coverImage}" class="story-image" 
+                <img src="${story.coverImage}" class="story-image" 
                 alt="${story.title}">
             `;
             storyImageContainer.style.display = 'block';
@@ -251,14 +251,14 @@ document.addEventListener('DOMContentLoaded', function () {
         newStoryModal.style.display = 'none';
     });
 
-    backButton.addEventListener('click', ()=>{
+    backButton.addEventListener('click', () => {
         storyView.style.display = 'none';
         document.querySelector('.stories-container').style.display = 'block';
         currentStoryId = null;
     });
 
     submitParagraphBtn.addEventListener('click', () => {
-        if(currentStoryId){
+        if (currentStoryId) {
             addParagraph(currentStoryId, newParagraphInput.value);
         }
     });
