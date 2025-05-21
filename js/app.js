@@ -257,7 +257,11 @@ document.addEventListener('DOMContentLoaded', function () {
         currentStoryId = null;
     });
 
-    
+    submitParagraphBtn.addEventListener('click', () => {
+        if(currentStoryId){
+            addParagraph(currentStoryId, newParagraphInput.value);
+        }
+    });
 
     window.addEventListener('click', (e) => {
         if (e.target === newStoryModal) {
