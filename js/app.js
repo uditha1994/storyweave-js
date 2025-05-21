@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             Object.entries(stories).forEach(([id, story]) => {
                 const lastParagraph = story.paragraphs
-                ? Object.values(story.paragraphs)[Object.values(story.paragraphs).length - 1]
-                : {text: 'No paragraph yet'};
+                    ? Object.values(story.paragraphs)[Object.values(story.paragraphs).length - 1]
+                    : { text: 'No paragraph yet' };
 
                 const storyCard = document.createElement('div');
                 storyCard.className = 'story-card';
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div class="story-card-footer">
                         <span>${story.paragraphs ? Object.keys
-                            (story.paragraphs).length : 0} Paragraphs</span>
+                        (story.paragraphs).length : 0} Paragraphs &nbsp;</span>
                         <button class="like-btn" data-story-id="${id}">
                             <i class="far fa-heart"></i>
                         </button>
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         storyTitle.textContent = story.title;
         storyContent.innerHTML = '';
 
-        if(story.paragraphs){
+        if (story.paragraphs) {
             Object.entries(story.paragraphs).forEach(([paragraphId, paragraph]) => {
                 const paragraphE1 = document.createElement('div');
                 paragraphE1.className = 'paragraph';
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('paragraph-like-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                
+
             });
         });
     }

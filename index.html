@@ -34,8 +34,8 @@
                 </div>
                 <div class="add-paragraph">
                     <h3>Continue This Story</h3>
-                    <textarea id="new-paragraph" placeholder="Write the next paragraph... 
-                (min 50 characters)"></textarea>
+                    <textarea id="new-paragraph"
+                        placeholder="Write the next paragraph... (min 50 characters)"></textarea>
                     <button class="btn-primary" id="submit-paragraph">Add to Story</button>
                 </div>
             </div>
@@ -43,21 +43,19 @@
 
         <div class="modal" id="new-story-modal">
             <div class="modal-content">
-                <span class="close-modal">Close</span>
+                <span class="close-modal">&times;</span>
                 <h2>Start a New Story</h2>
                 <input type="text" id="new-story-title" placeholder="Story Title">
                 <div class="image-upload-container">
                     <label for="story-image-upload" class="image-upload-label">
                         <i class="fas fa-image"></i> Choose Cover Image
-                        <input type="input" accept="image/*" style="display: none;" 
-                        id="story-image-upload">
+                        <input type="input" accept="image/*" style="display: none;" id="story-image-upload">
                     </label>
                     <div class="image-preview" id="image-preview">
                         <img src="" alt="Preview" id="preview-image">
                     </div>
                 </div>
-                <textarea id="new-story-first-paragraph" placeholder="Write the first 
-                paragraph..." rows="5"></textarea>
+                <textarea id="new-story-first-paragraph" placeholder="Write the first paragraph..." rows="5"></textarea>
                 <button class="btn-primary" id="create-story">Create Story</button>
             </div>
         </div>
