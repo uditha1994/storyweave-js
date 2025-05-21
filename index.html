@@ -27,6 +27,8 @@
                 <button class=" back-button" id="back-button">
                     <i class="fas fa-arrow-left"></i> Back to Stories
                 </button>
+                <h2 id="story-title"></h2>
+                <div class="story-image-container" id="story-image-container"></div>
                 <div class="story-content" id="story-content">
                     <!-- story paragraphs will be loaded here -->
                 </div>
@@ -44,6 +46,16 @@
                 <span class="close-modal">Close</span>
                 <h2>Start a New Story</h2>
                 <input type="text" id="new-story-title" placeholder="Story Title">
+                <div class="image-upload-container">
+                    <label for="story-image-upload" class="image-upload-label">
+                        <i class="fas fa-image"></i> Choose Cover Image
+                        <input type="input" accept="image/*" style="display: none;" 
+                        id="story-image-upload">
+                    </label>
+                    <div class="image-preview" id="image-preview">
+                        <img src="" alt="Preview" id="preview-image">
+                    </div>
+                </div>
                 <textarea id="new-story-first-paragraph" placeholder="Write the first 
                 paragraph..." rows="5"></textarea>
                 <button class="btn-primary" id="create-story">Create Story</button>
